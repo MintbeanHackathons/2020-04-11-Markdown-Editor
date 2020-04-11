@@ -1,4 +1,4 @@
-# Today's Objective: Roll your own Chrome dashboard
+# Today's Objective: Markdown Editor
 
 ## Prize
 
@@ -8,71 +8,73 @@ Tip: Read the [General Information Document](General%20Information.md) for more 
 
 ## Objective
 
-* `IMPORTANT` For security purposes, I will NOT be installing anyone's extensions on my local machine. To get Aesthetic points for your extension, please upload a 1 to 2 minute demo of the extension.
+Today's objective is to create your own Markdown Editor.
 
-Today's objective is to create your own dashboard for Chrome.
+Markdown, as you probably already know, is a formatting language for text-based documents. This document is written in Markdown. You can see its source to get a taste for what Markdown looks like.
 
-Dashboards (a.k.a. "New Tab" pages) are a popular type of Chrome extension. Dashboards are relatively easy to build. In fact, they're amazing 1st projects for anyone looking to learn how to build a Chrome extension.
+Some examples of Markdown Editors include:
 
-A very well-known one is [Momentum](https://momentumdash.com/), which replaces your New Tab page with a beautiful image, a clock, and an inspirational quote. Another is [Gyroscope](https://gyrosco.pe/chrome/), which gives you your personal statistics, and [Homey](https://chrome.google.com/webstore/detail/homey-your-startpage-assi/lllnjdmfnfjifcfpppjmcnanpokikcpl), which decorates your New Tab with a beautiful wallpaper and several widgets.
+* [StackEdit](https://stackedit.io/) (simple web-based)
+* [Dillinger](https://dillinger.io/) (simple web-based)
+* [Typora](https://typora.io/) (installed, with advanced features)
+* [hackmd](https://hackmd.io/) (this is a lot more than just a simple markdown editor)
 
 ## Requirements
 
-So, this is your task:
+Create a Markdown editor, like the above, that has the following components:
 
-Create a Chrome extension that replaces your "New Tab" page with a design of your own choosing. 
+* Input area
+* Compilation logic (you can use a library for this)
+* Preview panel (no need to do live preview, using a submit button is fine)
+
+Also, you should try to have a good stylesheet for the output HTML (you can use something like Bootstrap, Bulma, etc.)
+
+### Bonus points
+
+You get bonus points for any features other than the above that you can successfully demo. 
+
+For example:
+
+* Live preview (where your edits in the input area automatically show up in the preview panel)
+* Syntax highlighting for input area
+* Selectable themes for input area
+* Selectable themes for preview panel
+* Print to PDF
+* Locally installed (using Electron, for example)
+* Responsive design 
 
 That's it!
 
-But of course, only the most interesting, useful, and cool designs will have a chance of winning -- and they must be written well, too. So, get creative :-)
+The most interesting, useful, and cool designs will have a chance of winning -- and they must be written well, too. So, get creative :-)
 
+## How to build a simple markdown editor
 
-### How to build a Chrome extension
+Building a markdown editor is remarkably simple. You can use libraries for a lot of the functionality, and stitch them together using JavaScript logic.
 
-A Chrome extension is basically a `.zip` file. This project will contain a simple HTML page and some JS files zipped into a Chrome extension.
+Here are some suggested components for the various components above:
 
-Given time constraints, you should definitely NOT build a backend component for this project.
+### Input Area - Suggested Libraries
 
-You can read the following resources to get familiar with how to create this extension:
-* [StackOverflow page showing you how to create a New Tab](https://stackoverflow.com/questions/39916079/how-to-create-a-chrome-extension-to-change-the-default-tab)
-* [Chrome Extension documentation](https://developer.chrome.com/extensions)
+* CodeMirror
+* Ace Editor
 
-## Suggested projects
+### Compilation Logic
 
-You can create a project of your own choosing, as long as it replaces New Tab.
+* [Showdown](https://github.com/showdownjs/showdown)
+* [markdown-it](https://github.com/markdown-it/markdown-it)
+* [markedjs](https://github.com/markedjs/marked)
 
-Please make sure you pick something that can be completed in 2 hours AND with good quality code. So keep it simple :-)
+### Preview Panel
 
-Here are some suggestions to get your brain juices flowing.
+Well, for this one, you just output the compiled HTML to the DOM. :-)
 
-(Feel free to mix and match)
+## Frameworks:
 
-* New Tab wallpaper replacer (Easy)
-* New Tab with useful links (Easy)
-* Notepad which persists its data (Easy)
-* Useful utilities dashboard, like calculators and converters (Easy to Medium)
-* News dashboard (Medium)
-* Bitcoin and stock prices tracker (Medium)
-* A simple game (Hard)
-
-### Frameworks:
-
-If you're building something complex, it is recommended that you use a framework such as React, Vue, Angular or jQuery.
-
-Chrome extensions can be built with any framework. But if you don't want to use a framework, that's totally fine, too. Especially for this project, where a basic New Tab can be built with a simple HTML file.
-
-### APIs:
-
-Here are some useful suggestions:
-
-* [Get a random HD wallpaper from Unsplash](https://source.unsplash.com/) (Use `https://source.unsplash.com/random/3840x2160` for HD wallpapers)
-* [Public APIs](https://github.com/public-apis/public-apis) where you can source more data. (Look for "Auth: No, CORS: Yes". These APIs don't need additional overhead such as registration in order to work with them)
+It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
 
 ## Restrictions
 
 * Your project must use JavaScript.
-* Your project must NOT have a backend component. (It really isn't needed)
-* `IMPORTANT` For security purposes, I will NOT be installing anyone's extensions on my local machine. To get Aesthetic points for your extension, please upload a 1 to 2 minute demo of the extension.
 
 There are no other restrictions.
 

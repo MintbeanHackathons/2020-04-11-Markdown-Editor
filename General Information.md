@@ -16,8 +16,6 @@ Links:
 * [Slack](https://join.slack.com/t/mintbeanhackathons/shared_invite/zt-cyxqi3jo-dXg1sw3RcZ07andai~Bhww)
 * [Github](https://github.com/MintbeanHackathons)
 
-Saturday, March 21, 2020
-
 | Start | End  | Description |
 |-------|------|-------------|
 | 12:00pm  | 12:30pm | (Optional) Orientation for newcomers and people who need a refresh |
@@ -25,7 +23,7 @@ Saturday, March 21, 2020
 | 12:45pm  | 3:00pm | Part 1 - Programming (Solo, heads-down) |
 | 3:00pm  | 3:30pm | Code Review how-to instructions |
 | 3:30pm  | 4:00pm | Part 2 - Code Review (in groups) |
-| 4:00pm  | 4:30pm | (Optional) Q&A w/ Monarch |
+| 4:00pm  | 4:30pm | (Optional) Hireside Chat with Guest, OR Q&A with Monarch |
 
 ## Your responsibilities as a participant
 
@@ -66,9 +64,11 @@ When done:
 The best way to get points for aesthetic appeal is to deploy your project to a server.
 
 Suggested methods:
-* [Codepen](https://codepen.io/) is a great spot for frontend code. You can even add libraries like React and Vue via CDN imports using the menu. Make sure you "Save" your project and leave a link in your project's README.
 
-* [Repl.it](https://repl.it/@monarchwadia/Example-Nodejs-Server) is a great way to deploy backend code for an example project, including a full-stack Express application.
+* Codepen
+* Repl.it
+* Heroku
+* Github Pages
 
 If the above are not options for you, you can capture your screen and attach a video with your final push. (including with your cellphone camera, no big deal). 
 
